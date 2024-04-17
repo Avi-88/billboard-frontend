@@ -1,0 +1,83 @@
+.container {
+    width: 400px;
+    margin: 112px 160px 50px auto; 
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+  }
+  
+  .headerL {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .underline {
+    height: 2px;
+    width: 60px;
+    background-color: #333;
+    margin: 10px auto;
+  }
+  
+  .inputs {
+    margin-top: 20px;
+  }
+  
+  .input {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  input {
+    flex: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .submit-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .bodyL {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/Billboard.jpeg'); /* Specify the path to your background image */
+    background-size:100%;
+    background-position:top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
