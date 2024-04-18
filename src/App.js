@@ -8,6 +8,8 @@ import Hotel from "./pages/hotel/Hotel";
 import List from "./pages/list/List";
 import SignUp from "./pages/login/SignUp";
 import Login from "./pages/login/Login";
+import Seller from "./pages/Sell/Seller";
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +19,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/hotels" element={<List/>}/>
         <Route path="/hotels/:id" element={<Hotel/>}/>
+        <Route path="/Sell" element={<Seller/>}/>
       </Routes>
     </BrowserRouter>
   );

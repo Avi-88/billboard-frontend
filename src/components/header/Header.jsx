@@ -19,6 +19,7 @@ import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 
 const Header = ({ type }) => {
+  const [userName] = useState(localStorage.getItem("userName"))
   const [destination, setDestination] = useState("");
   const [price, setPrice] = useState("");
   const handlePriceChange = (e) => {
@@ -109,12 +110,12 @@ const mediaTypes = ['CityBillboards', 'HighwayBillboards', 'DigitalBillboards'];
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              Need a Billboard? We Got You!
+              Need a Billboard? We Got You {userName} ! 
             </h1>
             <p className="headerDesc">
-              Book your Billboards acording to your preferences 
+              Book your Billboards acording to your preferences
             </p>
-            <button className="headerBtn">Sign in / Register</button>
+           
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faLocationDot} className="headerIcon" />
